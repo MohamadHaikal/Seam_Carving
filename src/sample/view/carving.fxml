@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane fx:id="carving" fx:controller="sample.controller.CarvingController" alignment="CENTER" animated="false" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="653.0" text="Image After  Seam Carving" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <textFill>
+        <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+                <Stop>
+                    <color>
+                        <Color />
+                    </color>
+                </Stop>
+                <Stop offset="1.0">
+                    <color>
+                        <Color red="0.4108656048774719" green="0.1607999950647354" blue="0.6700000166893005" />
+                    </color>
+                </Stop>
+            </stops>
+        </LinearGradient>
+    </textFill>
+    <font>
+        <Font name="Rockwell" size="24.0" />
+    </font>
+   <content>
+      <ImageView  fx:id="image" fitHeight="393.0" fitWidth="652.0" pickOnBounds="true" preserveRatio="true" />
+   </content>
+</TitledPane>

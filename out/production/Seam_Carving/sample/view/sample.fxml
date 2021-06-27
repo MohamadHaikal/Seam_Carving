@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TitledPane fx:id="titledPane" alignment="CENTER" animated="false" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="653.0" text="Seam Carving" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="395.0" prefWidth="651.0">
+            <children>
+                <Text fontSmoothingType="LCD" layoutX="462.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height:">
+                    <font>
+                        <Font name="Rockwell" size="14.0" />
+                    </font>
+                </Text>
+                <Text fontSmoothingType="LCD" layoutX="460.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Width:">
+                    <font>
+                        <Font name="Rockwell" size="14.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="b_height" layoutX="510.0" layoutY="52.0" prefHeight="33.0" prefWidth="83.0" />
+                <TextField fx:id="b_width" layoutX="511.0" layoutY="95.0" prefHeight="33.0" prefWidth="82.0" />
+                <Button fx:id="select" layoutX="66.0" layoutY="330.0" mnemonicParsing="false" onAction="#SelectImage" prefHeight="40.0" prefWidth="117.0" text="Select Image" textFill="#3235b9">
+                    <font>
+                        <Font name="Rockwell" size="13.0" />
+                    </font>
+                </Button>
+                <Button layoutX="255.0" layoutY="330.0" mnemonicParsing="false" onAction="#Processing" prefHeight="40.0" prefWidth="117.0" text="Processing" textFill="#3235b9">
+                    <font>
+                        <Font name="Rockwell" size="13.0" />
+                    </font>
+                </Button>
+                <Text fontSmoothingType="LCD" layoutX="462.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height:">
+                    <font>
+                        <Font name="Rockwell" size="14.0" />
+                    </font>
+                </Text>
+                <Text fontSmoothingType="LCD" layoutX="460.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Width:">
+                    <font>
+                        <Font name="Rockwell" size="14.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="a_width" layoutX="511.0" layoutY="224.0" prefHeight="33.0" prefWidth="82.0" />
+                <TextField fx:id="a_height" layoutX="511.0" layoutY="178.0" prefHeight="33.0" prefWidth="82.0" />
+                <Text fontSmoothingType="LCD" layoutX="444.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beforen processing ">
+                    <font>
+                        <Font name="Rockwell Bold" size="17.0" />
+                    </font>
+                </Text>
+                <Text fontSmoothingType="LCD" layoutX="456.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After processing ">
+                    <font>
+                        <Font name="Rockwell Bold" size="17.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="imageView" fitHeight="282.0" fitWidth="388.0" layoutX="28.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+
+                </ImageView>
+            <Button fx:id="RLE" layoutX="451.0"   layoutY="330.0" mnemonicParsing="false" onAction="#RLE" prefHeight="40.0" prefWidth="117.0" text="RLE " textFill="#3235b9">
+               <font>
+                  <Font name="Rockwell" size="13.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </content>
+    <textFill>
+        <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+                <Stop>
+                    <color>
+                        <Color />
+                    </color>
+                </Stop>
+                <Stop offset="1.0">
+                    <color>
+                        <Color red="0.4108656048774719" green="0.1607999950647354" blue="0.6700000166893005" />
+                    </color>
+                </Stop>
+            </stops>
+        </LinearGradient>
+    </textFill>
+    <font>
+        <Font name="Rockwell" size="24.0" />
+    </font>
+</TitledPane>
